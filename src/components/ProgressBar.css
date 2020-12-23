@@ -1,0 +1,23 @@
+.custom-bar {
+  margin-bottom: 1.5rem;
+}
+
+.custom-text {
+  font-size: 1.2rem;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  padding: 0 10px;
+  background-color: rgba(22, 22, 22, 0.5);
+  position: absolute;
+  width: 14%;
+}
+
+.custom-text2 {
+  font-size: 1.2rem;
+  align-items: center;
+  margin: 0;
+  text-align: right;
+  padding: 0 10px;
+  margin-left: auto;
+}
