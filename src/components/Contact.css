@@ -1,0 +1,21 @@
+.contact {
+  padding: 10px 80px 150px 80px;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-heading::after {
+  content: " ";
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 20px 0;
+  background: #555;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}

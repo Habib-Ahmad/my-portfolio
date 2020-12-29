@@ -1,0 +1,71 @@
+.portfolio {
+  padding: 150px 80px;
+}
+
+.portfolio-heading {
+  font-size: 3rem;
+}
+
+.portfolio-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-left: 30px;
+}
+
+.portfolio-heading::after {
+  content: " ";
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 20px 0;
+  background: #555;
+}
+
+.box {
+  display: inline-block;
+  margin: 20px;
+}
+
+.boxx {
+  padding: 10px;
+  width: 400px;
+  height: 250px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: 5px;
+  filter: grayscale(100);
+}
+
+.boxx > img {
+  max-width: 200px;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.boxx > .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  border-radius: calc(0.25rem - 1px);
+  font-size: 1.5rem;
+  display: none;
+  transition: display 2000ms;
+}
+
+.boxx:hover {
+  filter: grayscale(0);
+}
+
+.boxx:hover > img {
+  opacity: 1;
+}
+
+.boxx:hover > .content {
+  /* display: inline; */
+}

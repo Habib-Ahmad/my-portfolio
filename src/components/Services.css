@@ -1,4 +1,38 @@
 .services {
   background-color: #f1f1f1;
-  padding: 150px 0;
+  padding: 100px 0 50px 80px;
+}
+
+.services-box {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.service-heading {
+  font-size: 3rem;
+}
+
+.service-heading:after {
+  content: " ";
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 20px 0;
+  background: #555;
+}
+
+.services-box > img {
+  width: 100px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.services-box > h5 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin-right: 30px;
+}
+
+.services-box > p {
+  font-size: 1.2rem;
 }

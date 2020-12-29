@@ -17,14 +17,14 @@ export default class About extends Component {
         console.log(pp)
 
         return (
-            <div className="container-fluid">
+            <div id="about" className="container-fluid">
                 <div className="row custom-row">
                     <div className="col-sm-12 col-md-6 left-col">
                         {pp}
                     </div>
                     <div className="col-sm-12 col-md-6">
                         <div className="right-col">
-                            {/* <img className="my-img" src="photo.png" alt=".."/> */}
+                            <img className="" src="logo192.png" alt=".."/>
                             <h3>Who I am</h3>
                             <hr className="dotted"/>
                             <p>My name is Ahmad. I'm a design oriented front-end developer. I love creating immersive, UI / UX<br /><br />I am a well-organized person and problem solver with great attention to detail. I'm interested in working wth ambitious and positive people.</p>
