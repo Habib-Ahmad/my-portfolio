@@ -5,10 +5,10 @@ function Header() {
     return (
         <div className="header">
             <div className="header__overlay">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row custom__row">
                             <div className="col"></div>
-                            <div className="col-md-8 col-sm-12">
+                            <div className="col-xs-5">
                                 <p className="italic">Oh, hello there!</p>
                                 <h1 className="bold">Welcome</h1>
                                 <p className="italic">I'm Ahmad, I design and build user interfaces</p>                              

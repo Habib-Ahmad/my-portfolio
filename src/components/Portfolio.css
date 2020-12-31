@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 150px 80px;
+  padding: 150px 5vw;
 }
 
 .portfolio-heading {
@@ -21,51 +21,99 @@
   background: #555;
 }
 
+.sp {
+}
+
 .box {
-  display: inline-block;
-  margin: 20px;
+  position: relative;
 }
 
 .boxx {
-  padding: 10px;
-  width: 400px;
+  position: relative;
+  width: 100%;
   height: 250px;
-  vertical-align: middle;
-  text-align: center;
-  display: table-cell;
   background-color: rgba(196, 196, 196, 0.2);
-  border-radius: 5px;
-  filter: grayscale(100);
-}
-
-.boxx > img {
-  max-width: 200px;
-  max-height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.boxx > .content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1.25rem;
-  border-radius: calc(0.25rem - 1px);
-  font-size: 1.5rem;
-  display: none;
-  transition: display 2000ms;
+  border-radius: 10px;
+  transition-duration: 0.5s;
 }
 
 .boxx:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.img-box {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  right: 0%;
+  transform: translateY(-50%);
+  z-index: 10;
+  max-width: 200px;
+  max-height: 100%;
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+
+.extra-css {
+  margin-top: -30px;
+}
+
+.boxx:hover > .img-box {
+  top: 2%;
+  transform: translateY(0%);
   filter: grayscale(0);
 }
 
-.boxx:hover > img {
-  opacity: 1;
+.img-box > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .boxx:hover > .content {
-  /* display: inline; */
+  height: 155px;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.boxx:hover > .content > p {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.content > a {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.boxx:hover > .content > a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}
+
+.content > .custom-btn {
+  border-radius: 50px;
+  font-size: 1.2rem;
+  border: 1.5px solid black;
 }

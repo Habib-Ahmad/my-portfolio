@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavBar.css'
+import MenuIcon from '@material-ui/icons/Menu';
 
 function NavBar() {
     return (
@@ -13,7 +14,8 @@ function NavBar() {
                         aria-controls="navbarNavAltMarkup"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                            {/* <span className="navbar-toggler-icon navbar-light"></span> */}
+                            <MenuIcon style={{fontSize: "1.5rem"}} />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav custom-nav">
