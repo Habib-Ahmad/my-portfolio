@@ -3,47 +3,112 @@
   width: 100%;
   height: 100vh;
   color: #fff;
-  background-color: #111;
+  background-color: #151617;
   min-height: 600px;
   padding: 0;
   background-size: cover;
   background-position: center center;
   overflow: hidden;
   background-attachment: fixed;
-  background-image: url("https://www.wallpapertip.com/wmimgs/81-810417_minimalist-hd-wallpaper-macbook-pro.jpg");
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/81-810417_minimalist-hd-wallpaper-macbook-pro.jpg"); */
   filter: grayscale(1);
 }
 
-.header__overlay {
+#tsparticles {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -3;
+}
+
+.header-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-attachment: fixed;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
 }
 
-.custom__row {
-  margin-top: 30vh;
+.header-cutom-row {
+  margin-top: 45vh;
   z-index: 10;
 }
 
-.italic {
-  font-style: italic;
+.header-line1 {
   margin-bottom: 1rem;
-  font-size: 2vw;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
-  margin: auto;
+  font-size: 4rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 1), -1px -2px 3px rgba(0, 0, 0, 1);
   letter-spacing: 1px;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 4rem;
 }
 
-.bold {
-  margin-bottom: 0.5rem;
-  font-size: 6vw;
-  font-weight: 700;
-  line-height: 1.44;
-  color: inherit;
-  text-transform: uppercase;
+.header-line2 {
+  font-style: italic;
+  font-size: 2.5rem;
+  width: 100%;
   letter-spacing: 0.1em;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
-  margin: auto;
+  text-shadow: 0 1px 3px #000000;
+  text-align: center;
+}
+
+.particle {
+  opacity: 0;
+  animation: particleFadeIn 4s ease-in 4s 1 normal forwards;
+}
+@keyframes particleFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+    blinkTextCursor 1100ms steps(10) infinite normal;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    opacity: 1;
+    padding-right: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    padding-right: 10px;
+  }
+}
+@keyframes blinkTextCursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-line1 {
+    font-size: 2.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 2.5rem;
+  }
+
+  .header-line2 {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

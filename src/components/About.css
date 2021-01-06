@@ -1,15 +1,20 @@
-.custom-row {
-  padding: 150px 0;
-}
-
-.left-col {
-  padding-left: 40px;
-  padding-right: 75px;
+.about-custom-row {
+  padding: 150px 5vw 75px 5vw;
 }
 
 .right-col {
-  padding-left: 25px;
-  padding-right: 25px;
+}
+
+.left-col {
+  margin-bottom: 3rem;
+}
+
+.left-col > hr {
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 20px 0;
+  background: #555;
 }
 
 .my-img {
@@ -39,4 +44,11 @@
   text-align: right;
   padding: 0 10px;
   margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-custom-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

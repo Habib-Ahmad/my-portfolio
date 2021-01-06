@@ -4,17 +4,21 @@ import './Contact.css'
 function Contact() {
     return (
         <div >
-        <div id="contact" className="contact" >
+        <div id="contact" className="contact">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="row">
                             <div className="col-lg-8 col-md-12">
-                                <div className="contact-heading">Contact</div>
+                                <div className="contact-heading" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Contact</div>
                             </div>
                         </div>
 
-                        <form style={{paddingLeft: "10vw"}}>
+                        <form
+                            data-aos="zoom-out-left"
+                            data-aos-once="true"
+                            style={{paddingLeft: "10vw"}}
+                        >
                             <div class="row">
                                 <div class="form-group col-md-3">
                                     <label>First Name*</label>

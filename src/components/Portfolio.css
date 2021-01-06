@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 150px 5vw;
+  padding: 100px 5vw;
 }
 
 .portfolio-heading {
@@ -16,16 +16,9 @@
   content: " ";
   display: block;
   width: 140px;
-  height: 1px;
+  height: 2px;
   margin: 20px 0;
   background: #555;
-}
-
-.sp {
-}
-
-.box {
-  position: relative;
 }
 
 .boxx {
@@ -35,50 +28,53 @@
   background-color: rgba(196, 196, 196, 0.2);
   border-radius: 10px;
   transition-duration: 0.5s;
+  margin-bottom: 20px;
 }
 
 .boxx:hover {
-  background-color: rgb(163, 163, 163);
+  background: rgba(196, 196, 196, 0.4);
 }
 
 .img-box {
   position: absolute;
   top: 30%;
-  left: 0%;
-  right: 0%;
   transform: translateY(-50%);
   z-index: 10;
-  max-width: 200px;
+  width: 50%;
   max-height: 100%;
   transition: 0.5s;
   filter: grayscale(1);
-}
-
-.extra-css {
-  margin-top: -30px;
-}
-
-.boxx:hover > .img-box {
-  top: 2%;
-  transform: translateY(0%);
-  filter: grayscale(0);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .img-box > img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+}
+
+.extra-css {
+  margin-top: -25px;
+}
+
+.boxx:hover > .img-box {
+  top: 10%;
+  transform: translateY(0%);
+  filter: grayscale(0);
 }
 
 .content {
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   width: 100%;
   height: 50px;
   text-align: center;
   transition: 1s;
   z-index: 10;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 1px;
   opacity: 0;
@@ -94,9 +90,8 @@
 
 .boxx:hover > .content > p {
   position: relative;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 100%;
+  padding: 0 5px;
   margin-bottom: 5px;
 }
 
@@ -109,11 +104,13 @@
 .boxx:hover > .content > a {
   opacity: 1;
   transform: translateY(0px);
-  transition-delay: 0.3s;
+  transition-delay: 0.35s;
 }
 
 .content > .custom-btn {
   border-radius: 50px;
-  font-size: 1.2rem;
-  border: 1.5px solid black;
+  font-size: 85%;
+  letter-spacing: 1px;
+  color: #fff;
+  background: rgb(29, 29, 29);
 }

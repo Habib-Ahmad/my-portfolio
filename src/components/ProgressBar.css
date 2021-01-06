@@ -1,16 +1,19 @@
 .custom-bar {
   margin-bottom: 1.5rem;
+  height: 26px;
 }
 
 .custom-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   align-items: center;
   margin: 0;
   text-align: center;
-  padding: 0 10px;
-  background-color: rgba(22, 22, 22, 0.5);
+  padding: 0 0px;
+  background: #484e53;
   position: absolute;
-  width: 14%;
+  width: 20%;
+  z-index: 4;
+  opacity: 1;
 }
 
 .custom-text2 {
@@ -20,4 +23,16 @@
   text-align: right;
   padding: 0 10px;
   margin-left: auto;
+}
+
+.anim-progress {
+  animation: progress 1s ease-out 1s 1 normal none;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+  }
 }

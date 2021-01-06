@@ -1,6 +1,6 @@
 .services {
-  background-color: #f1f1f1;
-  padding: 100px 4.5vw 50px 4.5vw;
+  background-color: #f7f7f7;
+  padding: 50px 4.5vw 50px 4.5vw;
 }
 
 .services-box {
@@ -8,17 +8,21 @@
   margin-bottom: 30px;
 }
 
-.service-heading {
+.services-heading {
   font-size: 3rem;
 }
 
-.service-heading:after {
+.services-heading:after {
   content: " ";
   display: block;
   width: 140px;
-  height: 1px;
+  height: 2px;
   margin: 20px 0;
   background: #555;
+}
+
+.row {
+  overflow: hidden;
 }
 
 .services-box > img {
