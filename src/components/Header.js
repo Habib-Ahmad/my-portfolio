@@ -19,7 +19,7 @@ function Header() {
                 <div className="container">
                     <div className="row header-cutom-row">
                             <div className="col"></div>
-                            <div className="col-lg-5.5">
+                            <div className="col-lg-5">
                                 <p className="header-line1 anim-typewriter">Hello, I'm Ahmad</p>
                                 <h1
                                     className="header-line2"
