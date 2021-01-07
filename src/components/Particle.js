@@ -31,7 +31,7 @@ export default class Particle extends Component {
                         distance: 400,
                         duration: 2,
                         opacity: 0.8,
-                        size: 40,
+                        size: 20,
                     },
                     push: {
                         quantity: 4,
@@ -69,7 +69,7 @@ export default class Particle extends Component {
                         enable: true,
                         value_area: 500,
                     },
-                    value: 80,
+                    value: 100,
                     },
                     opacity: {
                     value: 0.1,
@@ -79,7 +79,7 @@ export default class Particle extends Component {
                     },
                     size: {
                     random: true,
-                    value: 3,
+                    value: 0,
                     },
                 },
                 detectRetina: true,

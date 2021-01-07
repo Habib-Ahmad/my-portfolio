@@ -17,7 +17,7 @@ const progressData= [
     {
         id: 4,       
         language: "React",
-        proficiency: "82%"
+        proficiency: "75%"
     },
     {
         id: 5,       

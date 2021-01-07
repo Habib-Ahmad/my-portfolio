@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState} from 'react'
 import './Contact.css'
 
 function Contact() {
+
+    const [valid, setvalid] = useState("valid")
+
     return (
-        <div >
         <div id="contact" className="contact">
             <div className="container-fluid">
                 <div className="row">
@@ -15,35 +17,41 @@ function Contact() {
                         </div>
 
                         <form
+                            className="needs-validation"
                             data-aos="zoom-out-left"
                             data-aos-once="true"
                             style={{paddingLeft: "10vw"}}
+                            noValidate
                         >
                             <div class="row">
                                 <div class="form-group col-md-3">
-                                    <label>First Name*</label>
-                                    <input type="text" class="form-control" placeholder="Enter your firstname" />
+                                    <label for="firstname">First Name*</label>
+                                    <input type="text" name="firstname" id="firstname" className="form-control" placeholder="Enter your firstname" required/>
+                                    <div></div>
                                 </div>
                                 <div class="form-group col-md-3">
-                                    <label>Last Name*</label>
-                                    <input type="text" class="form-control" placeholder="Enter your lastname" />
+                                    <label for="lastname">Last Name*</label>
+                                    <input type="text" name="lastname" id="lastname" className="form-control" placeholder="Enter your lastname" required/>
+                                    <div ></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label>E-mail*</label>
-                                    <input type="email" class="form-control" placeholder="Enter your email" />
+                                    <label for="email">E-mail*</label>
+                                    <input type="email" name="email" id="email" className="form-control" placeholder="Enter your email" required/>
+                                    <div ></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label>Your message for us*</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message"></textarea>
+                                    <label for="message">Your message for us*</label>
+                                    <textarea name="message" id="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message" required></textarea>
+                                    <div ></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="submit" name="name" value="Send message" class="btn btn-outline-dark btn-block" />
+                                    <input type="submit" value="Send message" className="btn btn-outline-dark btn-block" />
                                 </div>
                             </div>
                         </form>
@@ -51,7 +59,6 @@ function Contact() {
                         </div>
                 </div>
             </div>
-       </div>
        </div>
     )
 }

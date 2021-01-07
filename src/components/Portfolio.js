@@ -26,11 +26,11 @@ function Portfolio() {
                                 >
                                         Portfolio
                                 </div>
-                                <p className="portfolio-text" data-aos="slide-down" data-aos-duration="500" data-aos-once="true">Here are a few of my recent projects</p>
+                                <p className="portfolio-text" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">Here are a few of my recent projects</p>
                             </div>
                         </div>
 
-                        <div className="row" data-aos="zoom-in-down" data-aos-once="true">
+                        <div className="row" data-aos="fade-up" data-aos-once="true">
                             <div className="col-md-4">
                                     <div className="boxx">
                                         <div className="img-box">
