@@ -1,1 +1,7 @@
-
+spec:
+ name: my-portfolio
+ static_sites:
+ - git:
+     branch: main
+     repo_clone_url: https://github.com/Habib-Ahmad/my-portfolio.git
+   name: my-portfolio
