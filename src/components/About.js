@@ -14,7 +14,7 @@ function About() {
 
     const bars = ProgressData.map(item => 
         <ProgressBar key={item.id} item={item}/>
-    );
+    )
 
     return (
         <div id="about" className="container-fluid">

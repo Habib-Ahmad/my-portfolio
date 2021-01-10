@@ -17,6 +17,12 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-text {
+    width: 20%;
+  }
+}
+
 .custom-text2 {
   font-size: 1rem;
   align-items: center;
