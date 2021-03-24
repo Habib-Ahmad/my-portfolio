@@ -3,6 +3,8 @@ import './Portfolio.css'
 import ercas from '../img/ercasLogo.png'
 import widi from '../img/Widi_Jalo_Logo.png'
 import hulu from '../img/huluLogo.png'
+import airbnb from '../img/airbnb-logo.png'
+import aventine from '../img/aventineLogo.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -46,27 +48,53 @@ function Portfolio() {
                             <div className="col-md-4">
                                     <div className="boxx">
                                         <div className="img-box">
-                                            <img className="extra-css" src={widi} alt="" />
+                                            <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c513.png" alt="" />
                                         </div>
                                         <div className="content">
-                                            <p>A non-profit organisation engaged in charitable works across Nigeria</p>
-                                            <a href="https://widijalofoundation.com/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
+                                            <p>A demo of the popular lodging company, Airbnb</p>
+                                            <a href="https://airbnb-clone-e6e67.web.app/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
                                         </div>                                       
                                     </div>
+                            </div>                            
+
+                            <div className="col-md-4">
+                                <div className="boxx">
+                                    <div className="img-box">
+                                        <img src={hulu} alt="" />
+                                    </div>
+                                    <div className="content">
+                                        <p>A clone of one of the most popular streaming services</p>
+                                        <a href="https://hulu-clone-e6e67.web.app/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
+                                    </div>                                       
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="row" data-aos="fade-up" data-aos-once="true">
+                            <div className="col-md-4">
+                                <div className="boxx">
+                                    <div className="img-box">
+                                        <img className="extra-css" src={widi} alt="" />
+                                    </div>
+                                    <div className="content">
+                                        <p>A non-profit organisation engaged in charitable works across Nigeria</p>
+                                        <a href="https://widijalofoundation.com/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
+                                    </div>                                       
+                                </div>
                             </div>
 
                             <div className="col-md-4">
-                                    <div className="boxx">
-                                        <div className="img-box">
-                                            <img src={hulu} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <p>A clone of one of the most popular streaming services</p>
-                                            <a href="https://hulu-clone-e6e67.web.app/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
-                                        </div>                                       
+                                <div className="boxx">
+                                    <div className="img-box">
+                                        <img className="extra-css" src={aventine} alt="" />
                                     </div>
+                                    <div className="content">
+                                        <p>An investment company based in Nigeria</p>
+                                        <a href="https://widijalofoundation.com/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
+                                    </div>                                       
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
