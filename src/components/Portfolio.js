@@ -91,7 +91,7 @@ function Portfolio() {
                                     </div>
                                     <div className="content">
                                         <p>An investment company based in Nigeria</p>
-                                        <a href="https://widijalofoundation.com/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
+                                        <a href="https://aventineltd.com/" target="_blank" type="button" className="btn custom-btn">Visit Website</a>
                                     </div>                                       
                                 </div>
                             </div>
