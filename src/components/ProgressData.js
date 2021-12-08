@@ -12,17 +12,17 @@ const progressData= [
     {
         id: 3,       
         language: "Javascript",
-        proficiency: "78%"
+        proficiency: "80%"
     },
     {
         id: 4,       
-        language: "React",
-        proficiency: "75%"
+        language: "React.Js",
+        proficiency: "80%"
     },
     {
         id: 5,       
-        language: "Bootstrap",
-        proficiency: "88%"
+        language: "Typescript",
+        proficiency: "75%"
     },
     {
         id: 6,       
@@ -32,7 +32,7 @@ const progressData= [
     {
         id: 7,
         language: "Git",
-        proficiency: "90%"
+        proficiency: "80%"
     }
 ]
 

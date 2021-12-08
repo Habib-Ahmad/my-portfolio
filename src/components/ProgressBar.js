@@ -20,7 +20,7 @@ function ProgressBar(props) {
                     data-aos-duration="3000" 
                     style={{width: props.item.proficiency}}
                 ></div>
-                <p className="custom-text2 anim-text2">{props.item.proficiency}</p>
+                {/* <p className="custom-text2 anim-text2">{props.item.proficiency}</p> */}
             </div>
     )
 }

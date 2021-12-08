@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import Particle from './Particle'
 import Aos from 'aos'
@@ -6,14 +6,13 @@ import 'aos/dist/aos.css'
 
 function Header() {
 
-
     useEffect(() => {
         Aos.init({duration: 1000});
     }, [])   
     
 
     return (        
-        <div className="header">
+        <div id="home" className="header">
             <div className="header-overlay">
                 <div className="particle" ><Particle /></div>
                 <div className="container">
