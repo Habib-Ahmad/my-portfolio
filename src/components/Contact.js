@@ -1,10 +1,7 @@
-import React, { useState} from 'react'
+import React from 'react'
 import './Contact.css'
 
 function Contact() {
-
-    const [valid, setvalid] = useState("valid")
-
     return (
         <div id="contact" className="contact">
             <div className="container-fluid">
@@ -22,35 +19,35 @@ function Contact() {
                             data-aos-once="true"
                             noValidate
                         >
-                            <div class="row">
-                                <div class="form-group col-md-3">
-                                    <label for="firstname">First Name*</label>
+                            <div className="row">
+                                <div className="form-group col-md-3">
+                                    <label htmlFor="firstname">First Name*</label>
                                     <input type="text" name="firstname" id="firstname" className="form-control" placeholder="Enter your firstname" required/>
                                     <div></div>
                                 </div>
-                                <div class="form-group col-md-3">
-                                    <label for="lastname">Last Name*</label>
+                                <div className="form-group col-md-3">
+                                    <label htmlFor="lastname">Last Name*</label>
                                     <input type="text" name="lastname" id="lastname" className="form-control" placeholder="Enter your lastname" required/>
                                     <div ></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="email">E-mail*</label>
+                            <div className="row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="email">E-mail*</label>
                                     <input type="email" name="email" id="email" className="form-control" placeholder="Enter your email" required/>
                                     <div ></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="message">Your message for me*</label>
-                                    <textarea name="message" id="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message" required></textarea>
+                            <div className="row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="message">Your message for me*</label>
+                                    <textarea name="message" id="message" className="form-control" rows="3" placeholder="Enter Your Message" required></textarea>
                                     <div ></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="" value="Send message" className="btn btn-outline-dark btn-block" />
+                            <div className="row">
+                                <div className="form-group col-md-6">
+                                    <input type="" className="btn btn-outline-dark btn-block" />
                                 </div>
                             </div>
                         </form>

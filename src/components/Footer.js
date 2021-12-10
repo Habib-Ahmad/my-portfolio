@@ -1,7 +1,5 @@
-import { timers } from 'jquery'
 import React from 'react'
 import './Footer.css'
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 function Footer() {
     return (
